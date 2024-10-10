@@ -29,7 +29,7 @@ export default function SplitButton() {
         </div>
         ) : (
         <div className='flex md:gap-4 sm:gap-2 w-full transition-transform duration-300 ease-in-out transform hover:scale-100 scale-50'>        
-        <a href="" target='_blank'>
+        <a href="/resume/Resume_AjayKumarDRB.pdf" download="Resume_AjayKumarDRB.pdf" >
             <button className='inline-flex items-center gap-2 bg-white text-gray-900 border border-white rounded-xl px-6 h-12'>
                 <span className='font-semibold'>Download</span>
                 <div className="animate-bounce">
@@ -37,7 +37,7 @@ export default function SplitButton() {
                 </div>
             </button>
         </a>
-        <a href="" target='_blank'>
+        <a href="/resume/Resume_AjayKumarDRB.pdf" target='_blank'>
             <button className='inline-flex items-center gap-2 bg-white text-gray-900 border border-white rounded-xl px-6 h-12'>
                 <span className='font-semibold'>View</span>
                 <div className='animate-side-bounce mb-4'>
