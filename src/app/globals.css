@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;  
+
+
+@layer base {
+    .nav-item{
+        @apply px-4 py-1.5 rounded-full text-white/70 text-sm font-semibold hover:bg-white/10 hover:text-white transition duration-300;
+    }
+
+    .nav-selected{
+        @apply bg-white text-gray-900 hover:bg-white hover:text-gray-800;
+    }
+
+    .hero-ring{
+        @apply absolute inset-0 size-[620px] border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5 overflow-hidden pointer-events-none;
+    }
+
+    .scroll-down{
+        @apply transition duration-500 ease-in-out;
+    }
+
+    .circle-hover{
+        @apply overflow-hidden bg-emerald-300/5 text-emerald-400 border-2 border-emerald-400 hover:border-double hover:border-4 hover:duration-150 rounded-full px-6 transition-all shadow-2xl before:absolute before:h-0 before:w-0 before:rounded-full before:bg-emerald-400 before:duration-500 before:ease-in-out hover:shadow-emerald-400/50 hover:before:h-56 hover:before:w-56 hover:text-gray-900 duration-700
+    }
+
+    .contact-input{
+        @apply block w-full mb-2 p-2 rounded-2xl shadow-inner shadow-white/80 bg-gray-900 text-white/80 font-medium
+    }
+
+    
+}
+
+@layer components{
+
+    /* Custom scrollbar styles */
+    ::-webkit-scrollbar {
+        width: 12px; /* Width of the scrollbar */
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent; /* Background of the scrollbar track */
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #34d399; /* Tailwind emerald-400 */
+        border-radius: 6px; /* Rounded corners for the thumb */
+        border: 3px dotted transparent; /* Space around the thumb */
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #10b981; /* Darker color on hover */
+    }
+
+    /* For Firefox */
+    html {
+        scrollbar-width: thin; /* Thin scrollbar */
+        scrollbar-color: #34d399 transparent; /* Thumb color and track color */
+    }
+
+    /*For Text area scrollbar*/
+    textarea::-webkit-scrollbar {
+        width: 5px; /* Width of the scrollbar */
+    }
+
+    textarea::-webkit-scrollbar-track {
+        background: transparent; /* Background of the scrollbar track */
+    }
+
+    textarea::-webkit-scrollbar-thumb {
+        background-color: #34d399; /* Tailwind emerald-400 */
+        border-radius: 6px; /* Rounded corners for the thumb */
+        border: 3px dotted transparent; /* Space around the thumb */
+    }
+
+    textarea::-webkit-scrollbar-thumb:hover {
+        background-color: #10b981; /* Darker color on hover */
+    }
+
+}
+
+
+@layer utilities{
+    .container{
+        @apply lg:max-w-5xl
+    }
+}
