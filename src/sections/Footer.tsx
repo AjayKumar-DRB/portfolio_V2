@@ -1,7 +1,7 @@
 const socialLinks = [
   {
     title:'LinkedIn',
-    href:'https://www.linkedin.com/in/ajay-d-r-b-kumar/',
+    href:'https://www.linkedin.com/in/ajaykumardrb/',
   },
   {
     title:'Leetcode',

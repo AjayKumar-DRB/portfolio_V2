@@ -20,7 +20,7 @@ export const HeroSection = () => {
     },
     {
       iconName: LinkedInIcon,
-      url:"https://www.linkedin.com/in/ajay-d-r-b-kumar/",   
+      url:"https://www.linkedin.com/in/ajaykumardrb/",   
     },
     {
       iconName: LeetCodeIcon,
